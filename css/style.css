@@ -1,0 +1,430 @@
+@font-face {
+    font-family: "SFUIDisplay-Regular";
+    src: url(../assets/fonts/SFUIDisplay-Regular.woff) format('truetype');
+    font-weight: 400;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "SFUIDisplay-Bold";
+    src: url(../assets/fonts/SFUIDisplay-Bold.woff) format('truetype');
+    font-weight: 700;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "SFUIDisplay-Light";
+    src: url(../assets/fonts/SFUIDisplay-Light.woff) format('truetype');
+    font-weight: 300;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "SFUIDisplay-Semibold";
+    src: url(../assets/fonts/SFUIDisplay-Semibold.woff) format('truetype');
+    font-weight: 600;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "NewYorkExtraLargeBold";
+    src: url(../assets/fonts/NewYorkExtraLargeBold.otf) format('truetype');
+    font-weight: 900;
+    font-display: swap;
+}
+
+.container {
+    max-width: 1440px;
+    width: 100%;
+    padding-left: 165px;
+    padding-right: 165px;
+    margin: 0 auto;
+}
+
+.title {
+    font-family: "NewYorkExtraLargeBold";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 124%;
+    letter-spacing: -0.04em;
+    color: #000000;
+}
+
+.btn {
+    background-color: #FD665E;
+    color: #FFFFFF;
+    text-align: center;
+    letter-spacing: 0.01em;
+    padding: 4px 24px;
+    font-family: "SFUIDisplay-Semibold";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 40px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    transition: all 0.5s ease-in;
+    background-color: #f68983;
+}
+
+.text {
+    color: #000000;
+    letter-spacing: 0.01em;
+    font-family: "SFUIDisplay-Regular";
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 160%;
+}
+
+
+/* HEADER */
+
+.header {
+    padding: 24px 50px;
+}
+
+.header__wrap {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header__left {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header__logo {
+    margin-right: 37px;
+}
+
+.nav__list {
+    width: 507px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.nav__list-item {
+    display: inline-block;
+    color: #585858;
+    text-align: center;
+    letter-spacing: 0.01em;
+    font-family: "SFUIDisplay-Regular";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 40px;
+}
+
+.header__right {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 250px;
+}
+
+.header__btn {
+    width: 99px;
+    height: 48px;
+}
+
+.header__btn--sign-in {
+    background-color: transparent;
+    color: #585858;
+}
+
+
+/* MAIN */
+
+.main {
+    padding-top: 48px;
+    padding-bottom: 48px;
+}
+
+.main__title {
+    letter-spacing: -0.04em;
+    color: #000000;
+    font-family: "NewYorkExtraLargeBold";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 112px;
+    line-height: 100%;
+    max-width: 870px;
+    margin-bottom: 47px;
+}
+
+.main__title span {
+    color: #FD665E;
+}
+
+.main__wrap {
+    display: flex;
+}
+
+.main__content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-right: 55px;
+}
+
+.main__text {
+    max-width: 290px;
+    margin-bottom: 48px;
+}
+
+.main__btn {
+    width: 179px;
+    height: 56px;
+}
+
+
+/* GALLERY */
+
+.gallery {
+    padding-top: 64px;
+    padding-bottom: 64px;
+}
+
+.gallery__title {
+    width: 535px;
+    height: 120px;
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 40px;
+}
+
+.gallery__inner {
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 45px;
+    grid-row-gap: 45px;
+}
+
+.gallery__img {
+    height: 100%;
+}
+
+
+/* CONSULTATION */
+
+.consultation {
+    padding-top: 64px;
+    padding-bottom: 64px;
+}
+
+.consultation__title {
+    max-width: 459px;
+    text-align: left;
+    margin-bottom: 40px;
+}
+
+.consultation__wrap {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 159px;
+    flex-wrap: wrap;
+}
+
+.consultation__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-width: 392x;
+}
+
+.consultation__info {
+    max-width: 305px;
+}
+
+.consultation__inner {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 48px;
+}
+
+.consultation__inner:last-child {
+    margin-bottom: 72px;
+}
+
+.consultation__icon-box {
+    margin-right: 40px;
+}
+
+.consultation__subtitle {
+    letter-spacing: 0.01em;
+    color: #000000;
+    margin-bottom: 8px;
+    font-family: "SFUIDisplay-Bold";
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 160%;
+}
+
+.consultation__text {
+    max-width: 396px;
+}
+
+.consultation__btn {
+    max-width: 175px;
+    margin-left: 80px;
+    margin-top: 24px;
+    padding: 8px 32px;
+}
+
+
+/* REVIEWS */
+
+.reviews-top {
+    padding-top: 64px;
+    padding-bottom: 75px;
+}
+
+.reviews-top__title {
+    width: 374px;
+    text-align: left;
+    position: relative;
+}
+
+.reviews-top__title::after {
+    content: "";
+    background-image: url(./../assets/images/reviews/“.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+    width: 57px;
+    height: 39px;
+    bottom: -50px;
+    right: 70px;
+}
+
+.reviews-bottom {
+    padding-top: 64px;
+    padding-bottom: 64px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 132px;
+}
+
+.reviews-bottom__title {
+    width: 535px;
+    margin-bottom: 64px;
+}
+
+
+/* SWIPER */
+
+.swiper {
+    width: 765px;
+    height: 100%;
+    margin-left: 365px;
+    position: relative;
+}
+
+.swiper-text {
+    font-family: "SFUIDisplay-Light";
+    font-style: normal;
+    font-weight: 300;
+    font-size: 32px;
+    line-height: 160%;
+    letter-spacing: 0.01em;
+    color: #000000;
+    margin-bottom: 59px;
+}
+
+.swiper-text-small {
+    font-family: "SFUIDisplay-Regular";
+    font-style: normal;
+    font-size: 16px;
+    line-height: 160%;
+    letter-spacing: 0.01em;
+    color: #000000;
+    max-width: 235px;
+}
+
+.swiper-text-small span {
+    font-family: "SFUIDisplay-Bold";
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 160%;
+    letter-spacing: 0.01em;
+    color: #000000;
+}
+
+
+/* стрелки */
+
+.swiper-button-next-my::after {
+    content: "";
+    background-image: url(./../assets/images/slider/row-left.svg);
+    background-size: contain;
+    width: 40px;
+    height: 40px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+    right: 30px;
+    bottom: 0px;
+    z-index: 1;
+    margin-right: 8px;
+}
+
+.swiper-button-prev-my::after {
+    content: "";
+    background-image: url(./../assets/images/slider/row-right.svg);
+    width: 40px;
+    height: 40px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+    right: 0px;
+    bottom: 0;
+    z-index: 1;
+}
+
+
+/* PARTNERS */
+
+.partners {
+    padding-top: 64px;
+    padding-bottom: 105px;
+}
+
+.partners__title {
+    text-align: left;
+    margin-bottom: 56px;
+}
+
+.partners__wrap {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer {
+    padding-top: 79px;
+    padding-bottom: 80px;
+}
+
+.footer__nav {
+    justify-content: space-between;
+}
+
+.footer__wrap {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
