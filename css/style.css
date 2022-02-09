@@ -180,7 +180,6 @@
 }
 
 .main__text {
-    max-width: 290px;
     margin-bottom: 48px;
 }
 
@@ -202,8 +201,7 @@
 }
 
 .gallery__title {
-    width: 535px;
-    height: 120px;
+    max-width: 535px;
     text-align: center;
     margin: 0 auto;
     margin-bottom: 40px;
@@ -284,6 +282,10 @@
     gap: 159px;
     flex-wrap: wrap;
 }
+.consultation__img {
+    max-width: 535px;
+    width: 100%;
+}
 
 .consultation__content {
     display: flex;
@@ -340,7 +342,7 @@
 }
 
 .reviews-top__title {
-    width: 374px;
+    max-width: 374px;
     text-align: left;
     position: relative;
 }
@@ -365,7 +367,11 @@
     align-items: center;
     justify-content: center;
     gap: 132px;
-    flex-wrap: wrap;
+
+}
+.reviews-img {
+    width: 100%;
+    max-width: 445px;
 }
 
 .reviews-bottom__title {
@@ -465,6 +471,8 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    gap: 40px;
+    flex-wrap:wrap;
 }
 
 .footer {
@@ -478,6 +486,61 @@
 
 .footer__wrap {
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
 }
+
+/* BURGER */
+
+
+    .burger__icon {
+        background: url(./../assets/images/header/menu.svg) no-repeat center;
+        cursor: pointer;
+        display: none;
+        width: 40px;
+        height: 35px;
+            /* @media screen and (max-width: 1045px) {
+                display: block;
+            } */
+    }
+    .burger__menu {
+        background-color: #ff6363f7;
+        width: 330px;
+        padding: 30px;
+        position: fixed;           
+        top: 0;
+        right: -420px;
+        z-index: 999;
+        transition: .3s;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        
+    }
+    .burger__menu-active {
+        right: 0;
+    }
+    .burger__close {
+        background: url(./../assets/images/header/close_111152.svg) no-repeat center;
+        width: 40px;
+        height: 40px;
+        cursor: pointer;
+        position: absolute;
+        top: 30px;
+        right: 30px;
+    }
+    .burger__nav {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 30px;
+        font-size: 20px;
+        font-weight: 500;
+
+    }
+    .burger__social {
+        align-items: center;
+        justify-content: flex-start;
+    }
+

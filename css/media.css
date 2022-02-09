@@ -12,13 +12,19 @@
     .reviews-top__title::after {
         display: none;
     }
+    .text {
+        font-size: 26px;
+    }
 }
 
 @media screen and (max-width: 1095px) {
     .main__img {
         max-width: 565px; 
-
     }
+    .reviews-bottom {
+        flex-wrap: wrap;
+    }
+    
 }
 
 
@@ -31,10 +37,30 @@
     }
     .main__img {
         margin-top: 30px;        
-
     }
     
 }
+
+
+
+/* burger */
+@media screen and (max-width: 800px) {
+    .header__nav,
+    .header__right {
+        display: none;
+    }
+    .header__wrap {
+        justify-content: space-between;
+    }
+    .burger__icon {
+        display: block;
+    }
+
+}
+
+
+
+
 @media screen and (max-width: 768px) {
     .container {
         padding: 0 50px;
@@ -42,6 +68,9 @@
     .gallery__inner {
         grid-template-columns: repeat(2, 1fr);
     } 
+    .footer__nav {
+        display: none;
+    }
     
 }
 
@@ -49,9 +78,15 @@
     .container {
         padding: 0 40px;
     }
-    .nav__list {
-        
+    
+}
 
+@media screen and (max-width: 440px) {
+    .main__title {
+        font-size: 80px;
+    }
+    .swiper-text-small span {
+        font-size: 20px;
     }
 }
 

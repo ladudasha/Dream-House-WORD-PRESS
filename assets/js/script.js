@@ -26,3 +26,22 @@ $(document).ready(function() {
         }
     });
 });
+
+
+// burger-menu
+
+let burgerMenu = document.getElementById("burger__menu");
+
+function toggleBurgerMenu() {
+let burgerIcon = document.querySelector(".burger__icon");
+let burgerClose = document.getElementById("burger__close");
+
+burgerIcon.addEventListener("click", toggleMenu)
+burgerClose.addEventListener("click", toggleMenu)
+}
+
+function toggleMenu() {
+burgerMenu.classList.toggle("burger__menu-active")
+}
+
+toggleBurgerMenu()
