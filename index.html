@@ -21,12 +21,21 @@
         <div class="header__wrap">
             <div class="header__left">
                 <img class="header__logo logo" src="./assets/images/header/logo-arch.svg" alt="">
+                <!-- NAV HEADER -->
                 <nav class="header__nav nav">
                     <ul class="nav__list">
-                        <li class="nav__list-item">Design Gallery</li>
-                        <li class="nav__list-item">List of Architect</li>
-                        <li class="nav__list-item">Articles</li>
-                        <li class="nav__list-item">How it Works</li>
+                        <li class="nav__list-item">
+                            <a class="nav__link" href="#Design Gallery">Design Gallery</a>
+                        </li>
+                        <li class="nav__list-item">
+                            <a class="nav__link" href="#List of Architect">List of Architect</a>
+                        </li>
+                        <li class="nav__list-item">
+                            <a class="nav__link" href="#Articles">Articles</a>
+                        </li>
+                        <li class="nav__list-item">
+                            <a class="nav__link" href="#How it Works">How it Works</a>
+                        </li>
                     </ul>
                 </nav>
             </div>
@@ -43,19 +52,24 @@
         <div class="burger__list">
             <ul class="burger__nav nav">
                 <li class="nav__list-item">
-                    <a class="nav__link" href="#home">Design Gallery</a>
+                    <a class="nav__link" href="#Design Gallery">Design Gallery</a>
                 </li>
                 <li class="nav__list-item">
-                    <a class="nav__link" href="#portfolio">List of Architect</a>
+                    <a class="nav__link" href="#List of Architect">List of Architect</a>
                 </li>
                 <li class="nav__list-item">
-                    <a class="nav__link" href="#skills">Articles</a>
+                    <a class="nav__link" href="#Articles">Articles</a>
                 </li>
                 <li class="nav__list-item">
-                    <a class="nav__link" href="#about">How it Works</a>
-                </li>
-        
+                    <a class="nav__link" href="#How it Works">How it Works</a>
+                </li>        
             </ul>
+        </div>
+
+        <div class="burger__btns-block">
+            <img class="header__seach" src="./assets/images/header/ic-searhc.svg" alt="">
+            <button class="header__btn btn header__btn--sign-in">Sign In</button>
+            <button class="header__btn btn header__btn--sign-up">Sign Up</button>
         </div>
 
         <div class="burger__close" id="burger__close"></div>
@@ -69,7 +83,6 @@
     </header>
 
     <!-- MAIN -->
-
     <section class="main">
         <div class="container">
             <h1 class="main__title">Build Your Dream
@@ -85,7 +98,7 @@
     </section>
 
     <!-- GALLERY -->
-    <section class="gallery">
+    <section class="gallery" id="Design Gallery">
         <div class="container">
             <h2 class="gallery__title title">Build professional valuable room for you</h2>
             <div class="gallery__inner">
@@ -102,7 +115,7 @@
 
     <!-- CONSULTATION -->
 
-    <section class="consultation">
+    <section class="consultation" id="List of Architect">
         <div class="container">
 
             <h2 class="consultation__title title">Build your needs with Archmove</h2>
@@ -149,7 +162,7 @@
     </section>
 
     <!-- REVIEWS -->
-    <section class="reviews">
+    <section class="reviews" id="Articles">
         <div class="container">
             <div class="reviews-top">
                 <h2 class="reviews-top__title title">Sound Too Good To Be True?</h2>
@@ -200,7 +213,7 @@
     </section>
 
     <!-- PARTNERS -->
-    <section class="partners">
+    <section class="partners" id="How it Works">
         <div class="container">
             <h2 class="partners__title title">Our Partners</h2>
             <div class="partners__wrap">

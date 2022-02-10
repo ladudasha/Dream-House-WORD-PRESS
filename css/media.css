@@ -23,10 +23,8 @@
     }
     .reviews-bottom {
         flex-wrap: wrap;
-    }
-    
+    }    
 }
-
 
 @media screen and (max-width: 972px) {
     .header__wrap {
@@ -37,8 +35,7 @@
     }
     .main__img {
         margin-top: 30px;        
-    }
-    
+    }    
 }
 
 
@@ -55,11 +52,7 @@
     .burger__icon {
         display: block;
     }
-
 }
-
-
-
 
 @media screen and (max-width: 768px) {
     .container {
@@ -71,14 +64,12 @@
     .footer__nav {
         display: none;
     }
-    
 }
 
 @media screen and (max-width: 576px) {
     .container {
         padding: 0 40px;
-    }
-    
+    }    
 }
 
 @media screen and (max-width: 440px) {
